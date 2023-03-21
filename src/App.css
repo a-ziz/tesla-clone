@@ -6,6 +6,9 @@
     box-sizing: border-box; 
     scroll-behavior: smooth;
 }
+.main {
+  height: 100%;
+}
 .buttons {
   margin: 300px auto;
   padding: 10px;

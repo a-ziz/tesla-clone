@@ -2,6 +2,9 @@
   font-family: 'GothamBook';
   src: url('../assets/fonts/GothamBook.ttf');
 }
+a {
+  color: #000;
+}
 .navbar {
   position: fixed;
   z-index: 2;
@@ -17,6 +20,7 @@
   text-align: center;
 }
 .banner-dialog {
+  color: #000;
   font-size: 15px;
   margin: 5px 15px;
   padding: 2px;
@@ -42,7 +46,7 @@
   display: none;
 }
 .mobile__menu  .menu-icon{
-  padding: 6px 15px;
+  padding: 8px 15px;
   border-radius: 3px;
   font-family: 'GothamBook', sans-serif;
   font-weight: bold;
@@ -172,13 +176,21 @@ button {
   cursor: pointer;
 }
 
- /* media queries for responsive mobile devices */
+ /* media queries for responsiveness for all devices */
 @media (max-width: 1208px) {
   .desktop {
     display: none;
   }
+  .site__header {
+    margin: 0 -10px;
+  }
   .mobile__menu {
     display: inline-block;
+  }
+}
+@media (min-width: 1208px) {
+  .site__header {
+    margin: 0 14px;
   }
 }
 @media (max-width: 552px) {
