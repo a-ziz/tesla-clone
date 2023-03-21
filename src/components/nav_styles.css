@@ -176,7 +176,7 @@ button {
   cursor: pointer;
 }
 
- /* media queries for responsiveness for all devices */
+ /* media queries for responsiveness on all devices */
 @media (max-width: 1208px) {
   .desktop {
     display: none;
@@ -185,7 +185,7 @@ button {
     margin: 0 -10px;
   }
   .mobile__menu {
-    display: inline-block;
+    display: block;
   }
 }
 @media (min-width: 1208px) {
@@ -198,15 +198,11 @@ button {
   font-size: 13px;
   margin: 5px 10px;
   }
-  .buttons a {
-    display: block;
-    margin: 10px;
-  }
-  section .content {
-    padding-bottom: 14vh;
-  }
-  .buttons {
-    margin: 260px auto;
-    width: 100%;
+}
+
+@media only screen and (max-width: 767px) { 
+  .banner-dialog {
+  font-size: 13px;
+  margin: 5px 10px;
   }
 }

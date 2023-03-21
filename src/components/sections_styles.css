@@ -33,3 +33,26 @@ p {
   margin: 10px 0;
   padding-bottom: 20px;
 }
+
+ /* media queries for responsiveness on all devices */
+@media only screen and (max-width: 767px) { 
+
+}
+
+@media (max-width: 552px) {
+  section{
+    background-size: 220% 100vh;
+    background-position-x: 45%;
+  }
+  section .content {
+    padding-bottom: 14vh;
+  }
+  .buttons a {
+    display: block;
+    margin: 10px;
+  }
+  .buttons {
+    margin: 280px auto;
+    width: 100%;
+  }
+}
