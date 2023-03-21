@@ -8,6 +8,7 @@
 }
 .main {
   height: 100%;
+  scroll-snap-type: y mandatory;
 }
 .buttons {
   margin: 300px auto;

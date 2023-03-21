@@ -9,6 +9,8 @@ section {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 section .content {
   width: 100%;
