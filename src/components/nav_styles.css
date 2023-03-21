@@ -1,0 +1,200 @@
+@font-face {
+  font-family: 'GothamBook';
+  src: url('../assets/fonts/GothamBook.ttf');
+}
+.navbar {
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  width: 100%;
+}
+.banner {
+  background-color: #fff;
+  margin: 0;
+  padding: 10px 0;
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+.banner-dialog {
+  font-size: 15px;
+  margin: 5px 15px;
+  padding: 2px;
+  font-family: 'GothamBook', sans-serif;
+}
+.header a {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: initial;
+}
+.site__header {
+  display: flex;
+  justify-content: space-between;
+}
+.brand__name, .mobile__menu {
+  cursor: pointer;
+  margin: 8px 20px;
+  padding: 5px;
+  font-size: 20px;
+}
+.mobile__menu {
+  display: none;
+}
+.mobile__menu  .menu-icon{
+  padding: 6px 15px;
+  border-radius: 3px;
+  font-family: 'GothamBook', sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  backdrop-filter: blur(50px) saturate(80%);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.brand-icon {
+  overflow: hidden;
+  content: "";
+  display: block;
+  text-indent: -9999px;
+  width: 120px;
+  margin-top: 10px;
+}
+.is_visually_hidden {
+  clip: rect(0 0 0 0);
+  block-size: 1px;  
+  border: 0;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  inline-size: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+}
+
+/* desktop menu  */
+.desktop a {
+  color: #000;
+  padding: 7px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+}
+.desktop a:hover, .mobile__menu-items li a:hover, .close-icon:hover {
+  background-color: rgba(227, 225, 225, 0.65);
+  backdrop-filter: blur(50px) saturate(80%);
+  border-radius: 3px;
+  transition: ease;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-transition: ease;
+  -moz-transition: ease;
+  -ms-transition: ease;
+  -o-transition: ease;
+}
+.desktop {
+  margin: 20px 0;
+}
+.right {
+  margin-right: 30px;
+}
+
+.menu-opened {
+  right: 0%;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  transition: 0.5s;
+  z-index: 1;
+  position: fixed;
+  display: block;
+  top: 0px;
+  left: 0%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  width: 100vw;
+  background: white;
+  cursor: auto;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(4px) saturate(30%);
+}
+
+.mobile__menu-items {
+  position: relative;
+  padding: 5px 60px 20px 30px;
+  background-color: #fff;
+  float: right;
+  width: 300px;
+  overflow-y: auto;
+}
+.mobile__menu-items li {
+  text-align: left;
+  list-style: none;
+  margin: 8px 0;
+  display: flex;
+}
+.mobile__menu-items li a {
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px;
+  color: #000;
+  text-decoration: none;
+  flex-grow: 1;
+}
+.menu-opened .close-icon {
+  padding: 2px 10px;
+  cursor: pointer;
+  font-size: 35px;
+  position: absolute;
+  right: 20px;
+}
+.menu-button {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  float: right;
+  padding: 25px 15px;
+  height: 90px;
+  width: 300px;
+  margin-left: 80%;
+}
+button {
+  cursor: pointer;
+}
+
+ /* media queries for responsive mobile devices */
+@media (max-width: 1208px) {
+  .desktop {
+    display: none;
+  }
+  .mobile__menu {
+    display: inline-block;
+  }
+}
+@media (max-width: 552px) {
+  .banner-dialog {
+  font-size: 13px;
+  margin: 5px 10px;
+  }
+  .buttons a {
+    display: block;
+    margin: 10px;
+  }
+  section .content {
+    padding-bottom: 14vh;
+  }
+  .buttons {
+    margin: 260px auto;
+    width: 100%;
+  }
+}
