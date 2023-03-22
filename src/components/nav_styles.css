@@ -138,6 +138,7 @@ a {
   float: right;
   width: 300px;
   overflow-y: auto;
+  height: 150vh;
 }
 .mobile__menu-items li {
   text-align: left;

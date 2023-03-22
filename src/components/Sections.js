@@ -28,13 +28,13 @@ const Hero = () => {
         }}
       >
         <div className="content">
-          <h1>Model 3</h1>
-          <p>Leasing starting at $349/mo</p>
+          <h1 className=" animate fadeInUp one">Model 3</h1>
+          <p className="animate fadeInUp one">Leasing starting at $349/mo</p>
           <div className="buttons">
-            <a href="/#" className="btn button-dark">
+            <a href="/#" className="btn button-dark animate fadeInLeft three">
               Custom Order
             </a>
-            <a href="/#" className="btn button-light">
+            <a href="/#" className="btn button-light animate fadeInRight four">
               Demo Drive
             </a>
           </div>
@@ -46,13 +46,13 @@ const Hero = () => {
         }}
       >
         <div className="content">
-          <h1>Model Y</h1>
+          <h1 className=" animate fadeInUp one">Model Y</h1>
           <p></p>
           <div className="buttons">
-            <a href="/#" className="btn button-dark">
+            <a href="/#" className="btn button-dark animate fadeInLeft three">
               Custom Order
             </a>
-            <a href="/#" className="btn button-light">
+            <a href="/#" className="btn button-light animate fadeInRight four">
               Demo Drive
             </a>
           </div>
@@ -64,13 +64,13 @@ const Hero = () => {
         }}
       >
         <div className="content">
-          <h1>Model S</h1>
-          <p>Schedule a Demo Drive</p>
+          <h1 className=" animate fadeInUp one">Model S</h1>
+          <p className="animate fadeInUp one">Schedule a Demo Drive</p>
           <div className="buttons">
-            <a href="/#" className="btn button-dark">
+            <a href="/#" className="btn button-dark animate fadeInLeft three">
               Custom Order
             </a>
-            <a href="/#" className="btn button-light">
+            <a href="/#" className="btn button-light animate fadeInRight four">
               View Inventory
             </a>
           </div>
@@ -82,13 +82,13 @@ const Hero = () => {
         }}
       >
         <div className="content">
-          <h1>Model X</h1>
-          <p>Schedule a Demo Drive</p>
+          <h1 className=" animate fadeInUp one">Model X</h1>
+          <p className="animate fadeInUp one">Schedule a Demo Drive</p>
           <div className="buttons">
-            <a href="/#" className="btn button-dark">
+            <a href="/#" className="btn button-dark animate fadeInLeft three">
               Custom Order
             </a>
-            <a href="/#" className="btn button-light">
+            <a href="/#" className="btn button-light animate fadeInRight four">
               View Inventory
             </a>
           </div>
@@ -100,13 +100,15 @@ const Hero = () => {
         }}
       >
         <div className="content">
-          <h1>Solar Panels</h1>
-          <p>Lowest Cost Solar Panels in America </p>
+          <h1 className=" animate fadeInUp one">Solar Panels</h1>
+          <p className="animate fadeInUp one">
+            Lowest Cost Solar Panels in America{" "}
+          </p>
           <div className="buttons">
-            <a href="/#" className="btn button-dark">
+            <a href="/#" className="btn button-dark animate fadeInLeft three">
               Order Now
             </a>
-            <a href="/#" className="btn button-light">
+            <a href="/#" className="btn button-light animate fadeInRight four">
               Learn More
             </a>
           </div>
@@ -118,13 +120,15 @@ const Hero = () => {
         }}
       >
         <div className="content">
-          <h1>Solar Roof </h1>
-          <p>Produce Clean Energy From Your Roof </p>
+          <h1 className=" animate fadeInUp one">Solar Roof </h1>
+          <p className="animate fadeInUp one">
+            Produce Clean Energy From Your Roof{" "}
+          </p>
           <div className="buttons">
-            <a href="/#" className="btn button-dark">
+            <a href="/#" className="btn button-dark animate fadeInLeft three">
               Order Now
             </a>
-            <a href="/#" className="btn button-light">
+            <a href="/#" className="btn button-light animate fadeInRight four">
               Learn More
             </a>
           </div>
@@ -136,7 +140,7 @@ const Hero = () => {
         }}
       >
         <div className="content">
-          <h1>Accessories </h1>
+          <h1 className=" animate fadeInUp one">Accessories </h1>
           <p>
             {" "}
             <br /> <br />
