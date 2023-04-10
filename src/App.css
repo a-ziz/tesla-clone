@@ -10,25 +10,4 @@
   height: 100%;
   scroll-snap-type: y mandatory;
 }
-.buttons {
-  margin: 300px auto;
-  padding: 10px;
-}
-.btn {
-  margin: 0 15px;
-  text-decoration: none;
-  padding: 10px 65px;
-  font-weight: bold;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-}
-.button-dark {
-  background-color: rgba(23, 26, 32, 0.8); 
-  color: #fff;
-}
-.button-light {
-  background-color: rgba(244, 244, 244, 0.65);
-}
+

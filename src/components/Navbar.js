@@ -36,7 +36,80 @@ const Navbar = () => {
         <div className="desktop right">
           <a href="/#">Shop</a>
           <a href="/#">Account</a>
-          <a href="/#">Menu</a>
+          <a
+            href="/#"
+            onClick={() => {
+              setMenu(!menu);
+            }}
+          >
+            Menu
+          </a>
+          {menu && (
+            <div className="menu-opened">
+              <div className="menu-button" onClick={() => setMenu(!menu)}>
+                <span className="close-icon">&times;</span>
+              </div>
+              <ul className="desktop__menu-items">
+                <li>
+                  <a href="/#">Existing Inventory</a>
+                </li>
+                <li>
+                  <a href="/#">Used Inventory</a>
+                </li>
+                <li>
+                  <a href="/#">Trade-In</a>
+                </li>
+                <li>
+                  <a href="/#">Demo Drive</a>
+                </li>
+                <li>
+                  <a href="/#">Insurance</a>
+                </li>
+                <li>
+                  <a href="/#">Cybertruck</a>
+                </li>
+                <li>
+                  <a href="/#">Roadster</a>
+                </li>
+                <li>
+                  <a href="/#">Semi</a>
+                </li>
+                <li>
+                  <a href="/#">Charging</a>
+                </li>
+                <li>
+                  <a href="/#">Commercial Energy</a>
+                </li>
+                <li>
+                  <a href="/#">Utilities</a>
+                </li>
+                <li>
+                  <a href="/#">Find Us</a>
+                </li>
+                <li>
+                  <a href="/#">Support</a>
+                </li>
+                <li>
+                  <a href="/#">Utilities</a>
+                </li>
+                <li>
+                  <a href="/#">Charging</a>
+                </li>
+                <li>
+                  <a href="/#">Find Us</a>
+                </li>
+                <li>
+                  <a href="/#">Support</a>
+                </li>
+                <li>
+                  <a href="/#">Investor Relations</a>
+                </li>
+                <li>
+                  <a href="/#">United States English</a>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
         <div className="mobile__menu">
           <div

@@ -1,3 +1,8 @@
+.section-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll !important;
+  height: 100vh;
+}
 section {
   top: 50px;
   width: 100%;
@@ -10,7 +15,6 @@ section {
   background-size: cover;
   height: 100vh;
   scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 section .content {
   width: 100%;
@@ -155,10 +159,34 @@ p {
   margin: 10px 0;
   padding-bottom: 20px;
 }
+.buttons {
+  margin: 350px auto;
+  padding: 10px;
+}
+.btn {
+  margin: 0 15px;
+  text-decoration: none;
+  padding: 10px 65px;
+  font-weight: bold;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.button-dark {
+  background-color: rgba(23, 26, 32, 0.8); 
+  color: #fff;
+}
+.button-light {
+  background-color: rgba(244, 244, 244, 0.65);
+}
 
  /* media queries for responsiveness on all devices */
 @media only screen and (max-width: 767px) { 
-
+  .btn {
+    padding: 10px 35px;
+  }
 }
 
 @media (max-width: 552px) {
@@ -170,7 +198,7 @@ p {
     margin: 10px;
   }
   .buttons {
-    margin: 280px auto;
+    margin: 300px auto;
     width: 100%;
   }
 }

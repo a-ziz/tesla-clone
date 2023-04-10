@@ -21,7 +21,7 @@ const backgroundImage = {
 
 const Hero = () => {
   return (
-    <>
+    <div className="section-container">
       <section
         style={{
           backgroundImage: backgroundImage.section1,
@@ -154,7 +154,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

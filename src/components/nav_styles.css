@@ -89,7 +89,7 @@ a {
   text-decoration: none;
   align-items: center;
 }
-.desktop a:hover, .mobile__menu-items li a:hover, .close-icon:hover {
+.desktop a:hover, .mobile__menu-items li a:hover, .close-icon:hover, .desktop__menu-items {
   background-color: rgba(227, 225, 225, 0.65);
   backdrop-filter: blur(50px) saturate(80%);
   border-radius: 3px;
@@ -131,7 +131,7 @@ a {
   backdrop-filter: blur(4px) saturate(30%);
 }
 
-.mobile__menu-items {
+.mobile__menu-items, .desktop__menu-items {
   position: relative;
   padding: 5px 60px 20px 30px;
   background-color: #fff;
@@ -140,13 +140,13 @@ a {
   overflow-y: auto;
   height: 150vh;
 }
-.mobile__menu-items li {
+.mobile__menu-items li, .desktop__menu-items li {
   text-align: left;
   list-style: none;
   margin: 8px 0;
   display: flex;
 }
-.mobile__menu-items li a {
+.mobile__menu-items li a, .desktop__menu-items li a {
   transition: 0.3s;
   font-size: 14px;
   font-weight: 500;
@@ -154,6 +154,7 @@ a {
   color: #000;
   text-decoration: none;
   flex-grow: 1;
+  text-align: left;
 }
 .menu-opened .close-icon {
   padding: 2px 10px;
